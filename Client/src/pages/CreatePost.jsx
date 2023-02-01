@@ -13,7 +13,8 @@ export const CreatePost = () => {
 		photo: "",
 	});
 
-	function alert() {
+	function alert(e) {
+		e.preventDefault();
 		Swal.fire({
 			icon: "error",
 			title: "Oops...",
@@ -56,7 +57,10 @@ export const CreatePost = () => {
 		}
 	};
 
-	function handleSubmit() {}
+	function handleSubmit(e) {
+		e.preventDefault();
+		return false;
+	}
 
 	return (
 		<section className="max-w-7xl mx-auto">
@@ -67,7 +71,6 @@ export const CreatePost = () => {
 					community
 				</p>
 			</div>
-
 			<form className="mt-16 max-w-3xl" onSubmit={handleSubmit}>
 				<div className="flex flex-col gap-5">
 					<FormField
@@ -118,15 +121,14 @@ export const CreatePost = () => {
 						** Once you have created the image you want, you can share it with others
 						in the community **
 					</p>
-					<button
-						type="submit"
-						className="mt-3 text-white bg-[#6469ff] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
-						onClick={alert}
-					>
-						{loading ? "Sharing..." : "Share with the Community"}
-					</button>
 				</div>
-			</form>
+			</form>{" "}
+			<button
+				className="mt-3 text-white bg-[#6469ff] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+				onClick={alert}
+			>
+				Share with the Community
+			</button>
 		</section>
 	);
 };
