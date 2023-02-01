@@ -6,7 +6,11 @@ This app is a bit of demonstration of my skills.Keep in mind that I am still a b
 
 ## Demo
 
-Insert gif or link to demo
+
+
+
+https://user-images.githubusercontent.com/51328751/216027454-027902e7-b858-4ad5-b756-9d4da5eb513a.mp4
+
 
 
 ## Installation
