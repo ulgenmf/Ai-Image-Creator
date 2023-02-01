@@ -1,5 +1,5 @@
 
-# A humble duplicate for DALLE AI
+# A humble duplicate of DALLE AI
 
 This app is a bit of demonstration of my skills.Keep in mind that I am still a beginner who wants to improve. Therefore I woould aproicate an honest or even  cruel critics. 
 
