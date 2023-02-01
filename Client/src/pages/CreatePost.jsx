@@ -112,7 +112,7 @@ export const CreatePost = () => {
 						onClick={generateImage}
 						className=" text-white bg-green-700 hover:bg-green-800 duration-150 font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
 					>
-						{generatingImg ? "Generating..." : "Generate"}
+						{generatingImg ? "Generating... might take sometime" : "Generate"}
 					</button>
 				</div>
 
