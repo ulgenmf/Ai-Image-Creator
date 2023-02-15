@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { preview } from "../assets";
-import { getRandomPrompt } from "../utils";
 import { FormField, Loader } from "../components";
-import Swal from "sweetalert2";
+import { getRandomPrompt } from "../utils";
 
 export const CreatePost = () => {
 	const navigate = useNavigate();
